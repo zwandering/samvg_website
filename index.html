@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="SAMVG Experiment Results">
+  <meta name="keywords" content="SAMVG">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAMVG Experiment Results</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+<!--  <link rel="icon" href="./static/images/favicon.svg">-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!--/ Matting. -->
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-1">More Experiment Results of SAMVG</h2>
+
+      </div>
+    </div>
+
+    <br><br>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+
+      <!-- Re-rendering. -->
+      <h3 class="title is-4">Quantitative Experiment Results by Categories</h3>
+      <div class="content has-text-centered">
+
+        <h2 style='text-align: center;'>Quantitative Results on Render</h2>
+        <table style="border-collapse: collapse; width: 100%; text-align: center;">
+        <tr><th style='border: 1px solid black; padding: 8px; font-weight: bold;'>Metrics</th><th style='border: 1px solid black; padding: 8px; font-weight: bold;'>LIVE</th><th style='border: 1px solid black; padding: 8px; font-weight: bold;'>DIFFVG</th><th style='border: 1px solid black; padding: 8px; font-weight: bold;'>SAMVG</th></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>MSE↓</td><td style='border: 1px solid black; padding: 8px;'>0.00495</td><td style='border: 1px solid black; padding: 8px;'>0.04200</td><td style='border: 1px solid black; padding: 8px;'><strong>0.00449</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>LPIPS↓</td><td style='border: 1px solid black; padding: 8px;'>0.28400</td><td style='border: 1px solid black; padding: 8px;'>0.40600</td><td style='border: 1px solid black; padding: 8px;'><strong>0.26700</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>FID↓</td><td style='border: 1px solid black; padding: 8px;'>12.57</td><td style='border: 1px solid black; padding: 8px;'>13.57</td><td style='border: 1px solid black; padding: 8px;'><strong>12.39</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>Complexity↓</td><td style='border: 1px solid black; padding: 8px;'>14.70</td><td style='border: 1px solid black; padding: 8px;'>15.52</td><td style='border: 1px solid black; padding: 8px;'><strong>14.51</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>Paths↓</td><td style='border: 1px solid black; padding: 8px;'>61.53</td><td style='border: 1px solid black; padding: 8px;'>61.53</td><td style='border: 1px solid black; padding: 8px;'><strong>61.42</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>Number of SVG Parameters↓</td><td style='border: 1px solid black; padding: 8px;'>2091</td><td style='border: 1px solid black; padding: 8px;'>2091</td><td style='border: 1px solid black; padding: 8px;'><strong>2088</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>Time (s) ↓</td><td style='border: 1px solid black; padding: 8px;'>2524.66</td><td style='border: 1px solid black; padding: 8px;'>158.33</td><td style='border: 1px solid black; padding: 8px;'><strong>157.72</strong></td></tr>
+        </table>
+
+        <h2 style='text-align: center;'>Quantitative Results on Scenery</h2>
+        <table style="border-collapse: collapse; width: 100%; text-align: center;">
+          <tr>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>Metrics</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>LIVE</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>DIFFVG</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>SAMVG</th>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>MSE↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.00517</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.01500</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>0.00500</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>LPIPS↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.34300</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.38800</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>0.33100</strong></td>
+          </tr>
+          <!-- Remaining rows unchanged -->
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>FID↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>14.41</td>
+            <td style='border: 1px solid black; padding: 8px;'>15.71</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>14.39</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Complexity↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>14.70</td>
+            <td style='border: 1px solid black; padding: 8px;'>15.52</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>14.51</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Paths↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>63.86</td>
+            <td style='border: 1px solid black; padding: 8px;'>63.86</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>63.79</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Number of SVG Parameters↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>2171</td>
+            <td style='border: 1px solid black; padding: 8px;'>2171</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>2168</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Time (s) ↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>2804.47</td>
+            <td style='border: 1px solid black; padding: 8px;'>156.35</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>155.92</strong></td>
+          </tr>
+        </table>
+
+
+        <h2 style='text-align: center;'>Quantitative Results on Subjects</h2>
+        <table style="border-collapse: collapse; width: 100%; text-align: center;">
+          <tr>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>Metrics</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>LIVE</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>DIFFVG</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>SAMVG</th>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>MSE↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.00617</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.00743</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>0.00582</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>LPIPS↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.33300</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.36700</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>0.32000</strong></td>
+          </tr>
+          <!-- Remaining rows unchanged -->
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>FID↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>13.84</td>
+            <td style='border: 1px solid black; padding: 8px;'>14.20</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>13.47</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Complexity↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>14.70</td>
+            <td style='border: 1px solid black; padding: 8px;'>15.52</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>14.51</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Paths↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>55.53</td>
+            <td style='border: 1px solid black; padding: 8px;'>55.53</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>55.37</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Number of SVG Parameters↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>1887</td>
+            <td style='border: 1px solid black; padding: 8px;'>1887</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>1882</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Time (s) ↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>2509.62</td>
+            <td style='border: 1px solid black; padding: 8px;'>144.5</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>144.09</strong></td>
+          </tr>
+        </table>
+
+                <h2 style='text-align: center;'>Quantitative Results on Art</h2>
+        <table style="border-collapse: collapse; width: 100%; text-align: center;">
+        <tr><th style='border: 1px solid black; padding: 8px; font-weight: bold;'>Metrics</th><th style='border: 1px solid black; padding: 8px; font-weight: bold;'>LIVE</th><th style='border: 1px solid black; padding: 8px; font-weight: bold;'>DIFFVG</th><th style='border: 1px solid black; padding: 8px; font-weight: bold;'>SAMVG</th></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>MSE↓</td><td style='border: 1px solid black; padding: 8px;'>0.00704</td><td style='border: 1px solid black; padding: 8px;'>0.00771</td><td style='border: 1px solid black; padding: 8px;'><strong>0.00652</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>LPIPS↓</td><td style='border: 1px solid black; padding: 8px;'>0.433</td><td style='border: 1px solid black; padding: 8px;'>0.461</td><td style='border: 1px solid black; padding: 8px;'><strong>0.427</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>FID↓</td><td style='border: 1px solid black; padding: 8px;'><strong>340.12</strong></td><td style='border: 1px solid black; padding: 8px;'>347.88</td><td style='border: 1px solid black; padding: 8px;'>369.29</td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>Complexity↓</td><td style='border: 1px solid black; padding: 8px;'>14.700</td><td style='border: 1px solid black; padding: 8px;'>15.52</td><td style='border: 1px solid black; padding: 8px;'><strong>14.51</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>Paths↓</td><td style='border: 1px solid black; padding: 8px;'>68.00</td><td style='border: 1px solid black; padding: 8px;'>68.00</td><td style='border: 1px solid black; padding: 8px;'><strong>67.69</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>Number of SVG Parameters↓</td><td style='border: 1px solid black; padding: 8px;'>2312</td><td style='border: 1px solid black; padding: 8px;'>2312</td><td style='border: 1px solid black; padding: 8px;'><strong>2301</strong></td></tr>
+        <tr><td style='border: 1px solid black; padding: 8px;'>Time (s) ↓</td><td style='border: 1px solid black; padding: 8px;'>3011.41</td><td style='border: 1px solid black; padding: 8px;'>165.10</td><td style='border: 1px solid black; padding: 8px;'><strong>164.27</strong></td></tr>
+        </table>
+
+        <h2 style='text-align: center;'>Quantitative Results on Emoji</h2>
+        <table style="border-collapse: collapse; width: 100%; text-align: center;">
+          <tr>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>Metrics</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>LIVE</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>DIFFVG</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>SAMVG</th>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>MSE↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.00387</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.01050</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>0.00279</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>LPIPS↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.06850</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.10450</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>0.06640</strong></td>
+          </tr>
+          <!-- Remaining rows unchanged -->
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>FID↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>145.84</td>
+            <td style='border: 1px solid black; padding: 8px;'>183.74</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>137.68</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Complexity↓</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>5.54</strong></td>
+            <td style='border: 1px solid black; padding: 8px;'>5.72</td>
+            <td style='border: 1px solid black; padding: 8px;'>5.55</td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Paths↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>13.85</td>
+            <td style='border: 1px solid black; padding: 8px;'>13.85</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>13.60</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Number of SVG Parameters↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>470</td>
+            <td style='border: 1px solid black; padding: 8px;'>470</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>462</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Time (s) ↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>114.88</td>
+            <td style='border: 1px solid black; padding: 8px;'>33.19</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>33.15</strong></td>
+          </tr>
+        </table>
+
+        <h2 style='text-align: center;'>Quantitative Results on Pop Art</h2>
+        <table style="border-collapse: collapse; width: 100%; text-align: center;">
+          <tr>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>Metrics</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>LIVE</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>DIFFVG</th>
+            <th style='border: 1px solid black; padding: 8px; font-weight: bold;'>SAMVG</th>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>MSE↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.00818</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.00976</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>0.00551</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>LPIPS↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.15800</td>
+            <td style='border: 1px solid black; padding: 8px;'>0.18400</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>0.11200</strong></td>
+          </tr>
+          <!-- Remaining rows unchanged -->
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>FID↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>9.82</td>
+            <td style='border: 1px solid black; padding: 8px;'>10.22</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>9.32</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Complexity↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>14.70</td>
+            <td style='border: 1px solid black; padding: 8px;'>15.52</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>14.51</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Paths↓</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>97.00</strong></td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>97.00</strong></td>
+            <td style='border: 1px solid black; padding: 8px;'>99.33</td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Number of SVG Parameters↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>3298.00</td>
+            <td style='border: 1px solid black; padding: 8px;'>3298.00</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>3377.33</strong></td>
+          </tr>
+          <tr>
+            <td style='border: 1px solid black; padding: 8px;'>Time (s) ↓</td>
+            <td style='border: 1px solid black; padding: 8px;'>5640.47</td>
+            <td style='border: 1px solid black; padding: 8px;'>213.61</td>
+            <td style='border: 1px solid black; padding: 8px;'><strong>213.14</strong></td>
+          </tr>
+        </table>
+      </div>
+      <!--/ Re-rendering. -->
+
+
+      </div>
+    </div>
+
+    <br><br>
+
+        <div class="columns is-centered">
+      <div class="column is-full-width">
+
+      <!-- Re-rendering. -->
+      <h3 class="title is-4">More Qualitative Experiment Results</h3>
+
+    <br><br>
+
+      <div class="content has-text-centered">
+      <img src="static/images/more_exp.png" alt="PontTuset" width="1600" style="border-style: none">
+      </div>
+      <!--/ Re-rendering. -->
+
+
+      </div>
+    </div>
+      <div class="container is-max-desktop">
+  </div>
+    <!--/ Animation. -->
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+
+
+
+</body>
+</html>
